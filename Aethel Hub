@@ -4,6 +4,8 @@ end
 
 getgenv().loaded = true 
 
+repeat task.wait() until game:IsLoaded()
+
 local StarterGui = game:GetService("StarterGui")
 
 StarterGui:SetCore("SendNotification", {
